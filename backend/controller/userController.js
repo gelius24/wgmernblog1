@@ -171,7 +171,7 @@ const editUser = async (req, res, next) => {
   }
 };
 
-// POST : api/users/users
+
 const getUsers = async (req, res, next) => {
   try {
     const users = await User.find().select("-password");
