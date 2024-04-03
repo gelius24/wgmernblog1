@@ -18,7 +18,8 @@ const Header = () => {
     <nav>
       <div className="container nav__container">
         <Link className="nav__logo" to="/" onClick={closeNavHandler}>
-          <img src={Logo} alt="navbar logo" />
+          {/* <img src={Logo} alt="navbar logo" /> */}
+          <p className="fakeLogo">BLOG wg</p>
         </Link>
         {
           currentUser?.id && isNavShowing && <ul className="nav__menu">
